@@ -11,6 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::post('obtenerPersonas','PersonasController@obtenerPersonas');
+Route::post('guardarPersonas','PersonasController@guardarPersonas');
+Route::post('actualizarPersonas','PersonasController@actualizarPersonas');
+Route::post('eliminarPersonas','PersonasController@eliminarPersonas');
